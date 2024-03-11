@@ -53,7 +53,6 @@ Tính toán các hằng số cần thiết để giải hệ phương trình Đ�
 
 ## Preview ##
 
-**BKSEC training 2024**
 * nc 128.199.219.160 7011
 * Output:
 ```
