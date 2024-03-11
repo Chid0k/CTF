@@ -18,7 +18,7 @@ Solve: m = c
 
 (Trong trường hợp m ^ e < n ---> Đưa về giải c = m ^ e)
 
-## Idea ##
+## Idea
 
 Do số mũ e nhỏ và có thể lấy nhiều bộ [N, c] từ challenge. Ta sử dụng tính chất cuả đồng dư Trung hoa (Chinese Remainder Theorem) để tìm m ^ e.
 
@@ -39,7 +39,7 @@ _==> Công việc chúng ta là đi tìm '**X**' hay là '**mess ^ e**'_
 
 ***Điều kiện cần có***: Các cặp số '**mi**' phải đôi một nguyên tố cùng nhau: ```gcd(m[i], m[j]) == 1```
 
-## Solve ##
+## Solve 
 
 Tính toán các hằng số cần thiết để giải hệ phương trình Đồng dư
 * M = m1 * m2 * m3 * ... 
@@ -51,8 +51,7 @@ Tính toán các hằng số cần thiết để giải hệ phương trình Đ�
 
 # Simple challenge
 
-**BKSEC training 2024**
-## Preview 
+## Preview
 
 * nc 128.199.219.160 7011
 * Output:
@@ -61,7 +60,7 @@ Welcome to Hanxin's Military Camp. Would you like to enroll? (y/n)
 y
 {"requirement": "A2DFA420C1F5BB78B0C9E2DEAB213E8545A3084C0594E3AD5CEB4A4EBE4896390C83FD614A68CAFB00B46BEC1A970CBE76032E36188E2828FE1BEE0C5F0FDCBE410A80D720CDF856B8756493B120B5AC7A886DACA71012D44086A75FCC1393880186F2B00C3F520447199328E74D6DDB6760E5302B0AD0AEE84A4A5553FE3713", "key": ["D343959DAF0365ABA5A275B47BE34F319FFD93C3FDA4B6C25D11DE745CA19FA27A6BB906C2EFD7A998C48F1FF41E6A1DC57808818D4556897D92BE85F4F6791A2AFADA334753AF02D2B44BA769E8945593AD00A902F1F5EB0FCD46DA2A33003C9EAD82094664314796CB4035821EF72DE7A58D997E7E5BE5583D54AB4157C4F7", "5"]}
 ```
-## Code solve 
+## Code solve
 ```
 from Crypto.Util.number import bytes_to_long, long_to_bytes
 from gmpy2 import iroot
