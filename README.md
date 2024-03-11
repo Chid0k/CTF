@@ -25,6 +25,7 @@ Alice gửi bộ khóa công khai [N, e] cho Bob để Bob mã hóa tin nhắn v
 Tin nhắn Bob gửi cho Alice sẽ được mã hóa. M (Mess) là nội dung trước khi Bob gửi đi, C (cipher) là nội dung sau khi Bob mã hóa để gửi cho Alice.
 
 Bob gửi cho Alice: ```C = M ^ e % N```
+
 Alice dùng khóa cá nhân để giải mã ```M = C ^ d % N```
 
 # [-]   Some problem 
