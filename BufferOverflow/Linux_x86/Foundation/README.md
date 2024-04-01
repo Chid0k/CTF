@@ -21,7 +21,7 @@
 
 Biến cục bộ trong C/C++ được lưu trữ tại Stack.
 
-Stack là vùng bộ nhớ được xác định trong RAM. Nằm ở vùng bộ nhớ thấp hơn, trên biến toàn cục và biến tĩnh. Trong quá trình thực thi phần dữ liệu sẽ được ghi từ địa chỉ cao xuống địa chỉ thấp.
+Stack là vùng bộ nhớ được xác định trong RAM. Nằm ở vùng bộ nhớ thấp hơn, trên biến toàn cục và biến tĩnh. Trong quá trình thực thi _phần mở rộng_ sẽ giảm từ địa chỉ cao xuống địa chỉ thấp.
 ```
 | RAM | ... | Stack | Global and static variables | ...  |
 |-----|-----|-------|-----------------------------|------|
