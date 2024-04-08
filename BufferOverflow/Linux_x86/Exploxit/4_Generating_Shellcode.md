@@ -63,17 +63,6 @@ Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
 
 Breakpoint 1, 0x5655619d in bowfunc ()
 ```
-
-Netcat - Reverse Shell Listener
-Connecting to Reverse Shell to attack
-```shell
-$ nc -nlvp 31337
-```
-And run the payload
-```shell
-./leave_msg $(payload)
-```
-
 ## Stack
 
 ```shell
