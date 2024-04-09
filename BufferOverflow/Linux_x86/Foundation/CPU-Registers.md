@@ -34,9 +34,9 @@ Khung ngăn xếp xác định khung dữ liệu có **Begin (EBP)** và **End (
 | Address | Stack  |
 |:-------:|:------:|
 | Low     | ...... | <--- ESP           
-|         | Data 0 |                    DATA
-|         | Data 1 |                     ⬇
-|         | Data 2 |                     ⬇
+|         | Var 2 |                    DATA
+|         | Var 1 |                     ⬇
+|         | Var 0  |                     ⬇
 | High    | ...... | <--- EBP          
 ```
 
