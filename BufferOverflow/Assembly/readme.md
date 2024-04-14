@@ -141,6 +141,31 @@ void _exit(int status);
 +---------------+----+--+---------+     +----------+----+--+---------+------------+
 ```
 
+# Function calling convention
+---
+Có bốn điều chính chúng ta cần xem xét trước khi gọi một hàm:
+- Lưu các giá trị thanh ghi vao stack
+- Truyền các đối số vào hàm (giống với syscall)
+- Căn chỉnh Stack Alignment
+- Lưu giá trị trả về của hàm vào rax
+Điều này gần như tương tự với *Syscall*, tuy nhiên điều khác biệt là chúng ta cần phải để ý tới **Stack Alignment**
+
+**Stack Alignment**
+Khi call tới một func chúng ta phải đảm bảo rằng: rsp được căn chỉnh theo ranh giới 16 bytes từ ngăn xếp hàm _start(main).
+> Chúng ta nên có 16 byte (hoặc bội số của 16) ở đầu ngăn xếp trước khi thực hiện lệnh gọi.
+
+Bằng cách này, chúng tôi sẽ thêm 16 byte bổ sung vào đầu ngăn xếp rồi xóa chúng sau lệnh call.
+```shell
+    sub rsp, 16
+    call function
+    add rsp, 16
+```
+
+# Topic: Shellcode
+---
+**Shellcode requirement**
+
+---
 > Update: 14/04/2024
 
 
