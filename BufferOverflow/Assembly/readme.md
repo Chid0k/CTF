@@ -114,7 +114,7 @@ void _exit(int status);
     mov rdi, 0      ;   startus argument
     syscall         ;   calling
 ```
-# Topic: call / ret
+# Topic: Call / ret
 ---
 
 - Khi cần thực thi một hàm, ta cần 1 lời gọi hàm: call func.
