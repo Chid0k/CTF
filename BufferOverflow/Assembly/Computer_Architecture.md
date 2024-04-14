@@ -85,3 +85,10 @@ Các bộ xử lý hiện đại có thể xử lý song song nhiều lệnh b�
 Mỗi loại bộ xử lý có Kiến trúc tập lệnh riêng và mỗi kiến ​​trúc có thể được biểu diễn sâu hơn bằng một số định dạng cú pháp
 
 
+```
+| Instruction |                                        Description                                        |
+|:-----------:|:-----------------------------------------------------------------------------------------:|
+|     call    | push the next instruction pointer rip to the stack, then jumps to the specified procedure |
+|     ret     | pop the address at rsp into rip, then jump to it                                          |
+```
+
