@@ -5,3 +5,10 @@
 - Nếu có gì sai sót hay thông báo cho tôi.
 - [Me at here](https://www.facebook.com/chinh.do.day/)
 - sudo HappyHacking
+
+# Document & Practice: 
+- [HackTheBox](https://academy.hackthebox.com/)
+- [CryptoHack](https://cryptohack.org/)
+- [IreadTeam](https://www.ired.team/)
+- [Exploit Education](https://exploit.education/)
+- [Pico](https://picoctf.org/)
