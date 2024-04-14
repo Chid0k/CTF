@@ -11,4 +11,4 @@
 - [CryptoHack](https://cryptohack.org/)
 - [IreadTeam](https://www.ired.team/)
 - [Exploit Education](https://exploit.education/)
-- [Pico](https://picoctf.org/)
+- [PicoCTF](https://picoctf.org/)
