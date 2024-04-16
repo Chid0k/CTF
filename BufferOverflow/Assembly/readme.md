@@ -1,3 +1,8 @@
+# Begin
+---
+Để bắt đầu chúng ta cần có kiến thức về kiến trúc máy tính và các tập lệnh hợp ngữ nasm, masm _x86_64.
+[Tham khảo tóm tắt tại đây](https://github.com/Chid0k/CTF/blob/main/BufferOverflow/Assembly/Computer_Architecture.md)
+
 # Topic: Stack
 ---
 
