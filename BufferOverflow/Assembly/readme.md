@@ -191,7 +191,9 @@ Các ký tự NULL (hoặc 0x00) được sử dụng làm dấu kết thúc chu
 
 > Nếu chúng ta cần chuyển 0 sang một thanh ghi, chúng ta có thể loại bỏ thanh ghi đó, giống như chúng ta đã làm với rdi ở trên. Tương tự như vậy, nếu chúng ta thậm chí cần đẩy 0 vào ngăn xếp (ví dụ: đối với Chấm dứt chuỗi), chúng ta có thể loại bỏ bất kỳ thanh ghi nào và sau đó đẩy thanh ghi đó vào ngăn xếp.
 
+[More](https://github.com/Chid0k/CTF/tree/main/BufferOverflow/Assembly/shellcode)
 
+[CheatSheet](https://github.com/Chid0k/CTF/blob/main/BufferOverflow/Assembly/Intro_To_Assembly_Language_Module_Cheat_Sheet.pdf)
 
 ---
 > Update: 14/04/2024
