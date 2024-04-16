@@ -73,24 +73,6 @@ Như chúng ta có thể thấy, chúng ta có một thanh ghi cho mỗi đối 
 
 > Nếu chúng ta cần tạo một con trỏ tới một giá trị được lưu trong một thanh ghi, chúng ta chỉ cần đẩy nó vào ngăn xếp, sau đó sử dụng con trỏ rsp để trỏ tới nó.
 
-MORE:
-
->Bây giờ chúng ta hãy xem các đối số được truyền từ caller đến callee như thế nào.
-
-![Calling convention](https://www.ired.team/~gitbook/image?url=https:%2F%2F386337598-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-legacy-files%2Fo%2Fassets%252F-LFEMnER3fywgFHoroYn%252F-M_kPdFv-dvxpx8KxFzD%252F-M_kPmfxo1wKpMfYNvkM%252Fimage.png%3Falt=media%26token=6507484d-b6b9-43b8-b9aa-64167c14aba1&width=768&dpr=1&quality=100&sign=787ba9af101145c8f8da23a2820dbda737fa8242932ed07fc6e5f0a118f9fc79)
-
-| Argument # | Location   | Variable | Value | Colour |
-|------------|------------|----------|-------|--------|
-| 1          | RDI        | a        | 0x1   | Red    |
-| 2          | RSI        | b        | 0x2   | Red    |
-| 3          | RDX        | c        | 0x3   | Red    |
-| 4          | RCX        | d        | 0x4   | Red    |
-| 5          | R8         | e        | 0x5   | Orange |
-| 6          | R9         | f        | 0x6   | Orange |
-| 7          | RSP + 0x10 | g        | 0x7   | Lime   |
-| 8          | RSP + 0x18 | h        | 0x8   | Lime   |
-| 9          | RSP + 0x20 | i        | 0x9   | Lime   |
-
 
 **Exit syscall**
 - Nếu không kết thúc syscall chương trình sẽ dẫn đến lỗi phân đoạn (segment fault).
@@ -161,6 +143,24 @@ Bằng cách này, chúng tôi sẽ thêm 16 byte bổ sung vào đầu ngăn x�
     add rsp, 16
 ```
 
+MORE:
+
+>Bây giờ chúng ta hãy xem các đối số được truyền từ caller đến callee như thế nào.
+
+![Calling convention](https://www.ired.team/~gitbook/image?url=https:%2F%2F386337598-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-legacy-files%2Fo%2Fassets%252F-LFEMnER3fywgFHoroYn%252F-M_kPdFv-dvxpx8KxFzD%252F-M_kPmfxo1wKpMfYNvkM%252Fimage.png%3Falt=media%26token=6507484d-b6b9-43b8-b9aa-64167c14aba1&width=768&dpr=1&quality=100&sign=787ba9af101145c8f8da23a2820dbda737fa8242932ed07fc6e5f0a118f9fc79)
+
+| Argument # | Location   | Variable | Value | Colour |
+|------------|------------|----------|-------|--------|
+| 1          | RDI        | a        | 0x1   | Red    |
+| 2          | RSI        | b        | 0x2   | Red    |
+| 3          | RDX        | c        | 0x3   | Red    |
+| 4          | RCX        | d        | 0x4   | Red    |
+| 5          | R8         | e        | 0x5   | Orange |
+| 6          | R9         | f        | 0x6   | Orange |
+| 7          | RSP + 0x10 | g        | 0x7   | Lime   |
+| 8          | RSP + 0x18 | h        | 0x8   | Lime   |
+| 9          | RSP + 0x20 | i        | 0x9   | Lime   |
+
 # Topic: Shellcode
 ---
 **Shellcode requirement**
@@ -196,7 +196,7 @@ Các ký tự NULL (hoặc 0x00) được sử dụng làm dấu kết thúc chu
 [CheatSheet](https://github.com/Chid0k/CTF/blob/main/BufferOverflow/Assembly/Intro_To_Assembly_Language_Module_Cheat_Sheet.pdf)
 
 ---
-> Update: 14/04/2024
+> Update: 16/04/2024
 
 
 
