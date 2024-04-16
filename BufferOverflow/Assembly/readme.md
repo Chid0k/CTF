@@ -164,6 +164,34 @@ Bằng cách này, chúng tôi sẽ thêm 16 byte bổ sung vào đầu ngăn x�
 # Topic: Shellcode
 ---
 **Shellcode requirement**
+Để có thể tạo ra một shellcode hoạt động, có ba Yêu cầu chính về Shellcode mà mã hợp ngữ của chúng ta phải đáp ứng:
+- Không chứa biến
+- Không đề cập đến địa chỉ bộ nhớ trực tiếp
+- Không chứa bất kỳ byte NULL (\x00) nào
+
+**Tách biến**:
+- sử dụng thanh ghi để lưu biến hoặc push vào stack với biến lớn hơn thanh ghi
+```shell
+    mov rsi, 'Academy!'
+>>>
+    push 'y!'
+    push 'B Academ'
+    push 'Hello HT'
+    mov rsi, rsp
+```
+**Xóa địa chỉ**
+Nếu chúng tôi từng có bất kỳ lệnh call hoặc tham chiếu nào đến địa chỉ bộ nhớ trực tiếp, chúng tôi có thể khắc phục điều đó bằng cách:
+- Thay thế lệnh call bằng loop hoặc rip-relative addresses (for calls and loops)
+- Push vào stack sử dụng rsp làm địa chỉ.
+
+**Xóa NULL bytes**
+Các ký tự NULL (hoặc 0x00) được sử dụng làm dấu kết thúc chuỗi trong mã máy và mã hợp ngữ, do đó, nếu gặp phải, chúng sẽ gây ra sự cố và có thể khiến chương trình kết thúc sớm.
+
+Để tránh có các byte NULL này, chúng ta phải sử dụng các thanh ghi phù hợp với kích thước dữ liệu của mình
+
+> Nếu chúng ta cần chuyển 0 sang một thanh ghi, chúng ta có thể loại bỏ thanh ghi đó, giống như chúng ta đã làm với rdi ở trên. Tương tự như vậy, nếu chúng ta thậm chí cần đẩy 0 vào ngăn xếp (ví dụ: đối với Chấm dứt chuỗi), chúng ta có thể loại bỏ bất kỳ thanh ghi nào và sau đó đẩy thanh ghi đó vào ngăn xếp.
+
+
 
 ---
 > Update: 14/04/2024
