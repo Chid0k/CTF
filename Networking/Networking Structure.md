@@ -42,26 +42,26 @@ Chúng ta có thể hình dung cấu trúc liên kết như một dạng hoặc 
 
 Cấu trúc liên kết mạng được chia thành 8 loại cơ bản sau:
 - **Point-to-Point :** Một liên kết vật lí trực tiếp nối 2 máy chủ (HOSTs). 
-![alt text](./data/pointtopoint.png){width:50% height:50%}
+![alt text](./data/pointtopoint.png)
 - **Bus :** Tất cả các máy chủ kết nối vào 1 đường truyền dẫn và không có thành phần trung tâm mạng kiểm soát.
-![al text](./data/bus.png){width:50% height:50%}
+![al text](./data/bus.png)
 - **Star :** Một thành phần mạng duy trì tất cả các kết nối tới máy chủ. Mỗi máy chủ được kết nối với thành phần mạng trung tâm thông qua một liên kết riêng. Đây thường là bộ định tuyến, trung tâm hoặc bộ chuyển mạch. Lưu lượng dữ liệu trên thành phần mạng trung tâm có thể rất cao vì tất cả dữ liệu và kết nối đều đi qua nó.
-![al text](./data/star.png){width:50% height:50%}
+![al text](./data/star.png)
 - **Ring :** Mỗi máy chủ hoặc nút được liên kết tới vòng bằng 2 sợi cáp:
     - Một cho tín hiệu đến
     - Một dây kahcs cho tín hiệu đi.
     - Cấu trúc liên kết vòng thường không yêu cầu thành phần mạng hoạt động.
     - Cấu trúc liên kết vòng logic dựa trên cấu trúc liên kết hình sao vật lý, trong đó nhà phân phối tại nút mô phỏng vòng bằng cách chuyển tiếp từ cổng này sang cổng tiếp theo.
     - Thông tin được truyền theo hướng truyền được xác định trước.
-![al text](./data/ring.png){width:50% height:50%}
+![al text](./data/ring.png)
 - **Mesh :** Các nút mạng được liên kết với nhau có thể chia sẻ lưu lượng truyền tải nếu một trong các nút bị hỏng.
-![al text](./data/mesh.png){width:50% height:50%}
+![al text](./data/mesh.png)
 - **Tree :** Là cấu trúc Star mở rộng. 
-![al text](./data/tree.png){width:50% height:50%}
+![al text](./data/tree.png)
 - **Hybrid :** Là sự kết hợp của 2 hay nhiều cấu trúc mạng khác nhau nhằm nhiều mục đích khác nhau.
-![al text](./data/hybrid.png){width:50% height:50%}
+![al text](./data/hybrid.png)
 - **Daisy Chain :** Trong cấu trúc, nhiều máy chủ được kết nối bằng cách đặt cáp từ nút này sang nút khác. 
-![al text](./data/daisychain.png){width:50% height:50%}
+![al text](./data/daisychain.png)
 
 ## [+] Proxies
 Procies hoạt động ở Layer & mô hình OSI bao gồm những dịch vị chính dưới đây:
@@ -71,13 +71,13 @@ Procies hoạt động ở Layer & mô hình OSI bao gồm những dịch vị c
 ### 1. Dedicated Proxy / Forward Proxy
 - Forward Proxy đại diện cho các máy clients. Nó đại diện cho clients gửi request tới các webserver, sau đó nó nhận dữ liệu mà các target site trả về và chuyển tới clients nếu hợp lệ.
 - Forward Proxy lọc các yêu cầu được gửi đi.
-![](./data/forwarproxy.png){width:50% height:50%}
+![](./data/forwarproxy.png)
 
 ### 2. Reverse Proxy
 - Ngược lại với Forward Proxy, Reverse Proxy lọc các yêu cầu được gửi đến. Mục tiêu của Reverse Proxy là lắng nghe 1 địa chỉ và chuyển tiếp nó đến mạng đóng.
 - Nhiều tổ chức sử dụng CloudFlare vì họ có mạng mạnh mẽ có thể chống lại hầu hết các cuộc tấn công DDOS. Bằng cách sử dụng Cloudflare, các tổ chức có cách lọc số lượng (và loại) lưu lượng truy cập được gửi đến máy chủ web của họ.
 - Một Reverse Proxy phổ biến là ModSecurity, một Web Application Firewall (WAF). Tường lửa ứng dụng web kiểm tra các yêu cầu web để tìm nội dung độc hại và chặn yêu cầu đó nếu nó độc hại.
-![](./data/reverseproxy.png){width:50% height:50%}
+![](./data/reverseproxy.png)
 
 ### 3. Transparent Proxy
 Proxy hoạt động minh bạch hoặc không minh bạch.
