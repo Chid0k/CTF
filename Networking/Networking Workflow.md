@@ -58,7 +58,7 @@ TCP/IP (Transmission Control Protocol/Internet Protocol) là thuật ngữ chung
 
 EX: TCP for mail or website - UDP for video,...
 
-### 5. Name Resolution - TCP
+### 5. Name Resolution - DNS
 - DNS cung cấp độ phân giải tên thông qua Tên miền đủ điều kiện (FQDN) trong địa chỉ IP, cho phép chúng tôi tiếp cận máy chủ mong muốn bằng tên được chỉ định trên internet.
 
 
