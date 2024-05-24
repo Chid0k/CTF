@@ -1,0 +1,17 @@
+module p, base g
+
+Alice: secert int a -> Bob A = g ^ a mod p
+Bob: secret int b -> Alice B = g ^ b mod p
+
+Alice: có a, B
+Bob: có A, b
+      -> Trao đổi: B ^ a mod p (Alice) == A ^ b mod p (Bob) =  share a secret 
+      
+Cả Alice và Bob đều có được giá trị chung cuối cùng vì (ga)b = (gb)a mod p. 
+Lưu ý rằng chỉ có a, b và (g^a)^b = (g^b)^a mod p là được giữ bí mật. 
+Tất cả các giá trị khác như p, g, ga mod p và gb mod p được truyền công khai. 
+Sau khi Alice và Bob tính được bí mật chung, 
+cả hai có thể sử dụng nó làm khóa mã hóa chung chỉ có hai người biết để gửi dữ liệu trên kênh truyền thông mở.
+
+
+
